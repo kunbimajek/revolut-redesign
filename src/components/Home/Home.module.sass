@@ -1,0 +1,107 @@
+.container
+    max-width: 1000px
+    margin: auto
+    min-height: 100vh
+.landing
+    .wrapper
+        position: absolute
+        left: 0
+        z-index: -1
+        width: 100%
+        overflow: hidden
+        height: 80%
+        max-height: 200vh
+        @media only screen and (max-width: 768px)
+            display: none
+        .background
+            background-image: url('/assets/images/Hero.jpeg')
+            background-position: center top
+            background-size: cover
+            height: 100%
+            width: 100%
+    .content
+        text-align: center
+        height: 80vh
+        max-height: 800px
+        min-height: 600px
+        padding: 0 12px
+        display: flex
+        align-items: center
+        justify-content: center
+        h1, p
+            text-align: center
+            margin: auto
+        h1
+            max-width: 620px
+        p
+            max-width: 500px
+            margin-top: 20px
+            margin-bottom: 20px
+            font-weight: 500
+
+.payments
+    margin-bottom: 50px
+    .mainText
+        margin: 80px 0
+        @media only screen and (max-width: 768px)
+            padding: 0 12px
+        span
+            display: block
+            font-size: 18px
+            font-weight: 500
+            color: rgb(117, 128, 138)
+            margin-bottom: 1rem
+            line-height: 24px
+        h3, span
+            text-align: center
+        p
+            margin: 1.5rem 0
+            text-align: center
+    .wrapper
+        border-radius: 20px
+        position: relative
+        height: 524px
+        overflow: hidden
+        color: white
+        cursor: pointer
+        @media only screen and (max-width: 992px)
+            padding: 0 12px
+        @media only screen and (min-width: 767px)
+            &:hover
+                .background
+                    transform: scale(1.05)
+                a
+                    background-color: rgb(6, 102, 235)
+        .background
+            background-image: url('/assets/images/Payments.jpeg')
+            height: 100%
+            width: 100%
+            background-size: cover
+            background-repeat: no-repeat
+            transition: all .5s
+        .content
+            padding: 40px
+            width: 50%
+            position: absolute
+            top: 25%
+            left: 0
+            bottom: 0
+            right: 0
+            @media only screen and (max-width: 768px)
+                width: 80%
+            h4
+                white-space: no-wrap
+                word-break: break-word
+                max-width: 300px
+            p
+                font-weight: 500
+            a
+                border-radius: 20px
+                padding: 0.25rem 0.5rem 0.25rem 1rem
+                transition: all 0.3s ease 0s
+                margin-left: -0.9rem
+                font-size: 18px
+                position: absolute
+                bottom: 40px
+                svg
+                    vertical-align: bottom

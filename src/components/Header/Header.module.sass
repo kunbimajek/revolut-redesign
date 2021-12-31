@@ -1,0 +1,53 @@
+.container
+    border-bottom: 1px solid rgb(223, 227, 231)
+    backdrop-filter: blur(16px)
+    background-color: rgba(241, 242, 244, 0.8)
+    padding: 0 12px
+    position: sticky
+    align-self: self-start
+    top: 0
+    z-index: 100
+    .header
+        display: flex
+        justify-content: space-between
+        max-width: 1000px
+        margin: auto
+        padding: 1rem 0
+        .navigation
+            display: flex
+            align-items: center
+            .menu
+                margin: 0
+                margin-left: 2rem
+                padding: 0
+                .menuItem
+                    display: inline-block
+                    padding: 0.5rem 0.75rem
+                    margin: 0 0.25rem
+                    transition: all .5s
+                    &:hover
+                        background-color: white
+                        border-radius: 10px
+                    a
+                        color: rgb(25, 28, 31)
+        .btnGroup
+            display: flex
+            align-items: center
+            a:not(:last-child)
+                margin-right: 15px
+
+@media only screen and (max-width: 474px)
+    .container 
+        .header
+            display: block
+            .navigation
+                margin: auto
+                display: block
+                .logo
+                    display: block
+                    text-align: center
+                .menu
+                    margin-left: 0
+                    text-align: center
+            .btnGroup
+                justify-content: center
